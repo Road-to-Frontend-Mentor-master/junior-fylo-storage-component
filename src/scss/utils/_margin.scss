@@ -2,6 +2,12 @@
   margin-bottom: rem(16px);
 }
 
+.set-margin-bottom-to-desktop {
+  @include to($desktop) {
+    margin-bottom: rem(16px);
+  }
+}
+
 .set-margin-bottom-2 {
   margin-bottom: rem(32px);
 }

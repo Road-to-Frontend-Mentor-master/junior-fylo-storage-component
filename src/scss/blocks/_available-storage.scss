@@ -44,8 +44,29 @@
 
   &__tooltip {
     position: absolute;
-    left: 50%;
-    bottom: rem(-32px);
-    transform: translateX(-50%);
+
+    @include to($desktop) {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: rem(-32px);
+    }
+
+    @include from($desktop) {
+      right: $storage-article-right-padding;
+      top: #{rem(-45px)};
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 17px solid transparent;
+        border-right: 17px solid transparent;
+        border-bottom: 17px solid white;
+        transform: rotateZ(45deg);
+        right: rem(-11px);
+        bottom: rem(-14px);
+      }
+    }
   }
 }

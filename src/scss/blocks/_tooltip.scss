@@ -5,6 +5,10 @@
   width: rem(180px);
   display: flex;
   justify-content: center;
+
+  @include from($desktop) {
+    border-bottom-right-radius: 0;
+  }
   
   &__text {
     font-weight: 700;

@@ -1,3 +1,10 @@
 .main {
+  display: grid;
   
+  @include from($desktop) {
+    grid-template-columns: 350px 540px;
+    gap: rem(30px);
+    max-width: 920px;
+    align-items: end;
+  }
 }

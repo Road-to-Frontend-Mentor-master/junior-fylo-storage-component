@@ -1,6 +1,9 @@
+@import "./functions/rem";
 @import "./config/variables";
 
-@import "./functions/rem";
+
+@import "./mixins/from";
+@import "./mixins/to";
 
 @import "./utils/margin";
 @import "./utils/font-size";
