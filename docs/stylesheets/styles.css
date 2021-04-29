@@ -107,7 +107,7 @@ p {
 }
 .available-storage__progress-bar {
   position: relative;
-  background-color: #0c122c;
+  background-color: #0C122Ca6;
   height: 1.25rem;
   width: 100%;
   border-radius: 0.625rem;
