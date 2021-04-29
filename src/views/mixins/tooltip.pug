@@ -1,3 +1,3 @@
 mixin tooltip(text, upperText, extraClass)
-  div(class=`tooltip ${extraClass}`.trimRight())
-    p.tooltip__text #{text} #[span.tooltip__up-text= upperText]
+  div(class=`tooltip set-box-shadow ${extraClass}`.trimRight())
+    p.tooltip__text.set-font-size-big #{text} #[span.tooltip__up-text.set-font-size-small.set-margin-left= upperText]

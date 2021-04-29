@@ -1,0 +1,51 @@
+.available-storage {
+  position: relative;
+
+  &__description {
+    color: white;
+  }
+
+  &__progress-bar {
+    position: relative;
+    background-color: $very-dark-blue;
+    height: rem(20px);
+    width: 100%;
+    border-radius: rem(10px);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 75%;
+      height: rem(14px);
+      left: rem(3px);
+      top: rem(3px);
+      border-radius: rem(7px);
+      background-image: $gradient;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(75% - #{rem(10px)});
+      top: rem(5px);
+      z-index: 10;
+      width: rem(10px);
+      height: rem(10px);
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  &__min-max {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  }
+
+  &__tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: rem(-32px);
+    transform: translateX(-50%);
+  }
+}

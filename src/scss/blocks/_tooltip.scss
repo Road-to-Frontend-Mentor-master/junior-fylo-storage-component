@@ -1,0 +1,19 @@
+.tooltip {
+  background-color: white;
+  padding: rem(12px);
+  border-radius: rem(10px);
+  width: rem(180px);
+  display: flex;
+  justify-content: center;
+  
+  &__text {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+  
+  &__up-text {
+    color: $grayish-blue;
+    text-transform: uppercase;
+  }
+}

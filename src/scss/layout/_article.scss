@@ -1,0 +1,10 @@
+.article {
+  background-color: $dark-blue;
+  border-radius: rem(10px);
+  padding: rem(40px) rem(40px) rem(52px);
+
+  &--fylo {
+    padding: rem(40px);
+    border-radius: rem(10px) rem(100px) rem(10px) rem(10px);
+  }
+}

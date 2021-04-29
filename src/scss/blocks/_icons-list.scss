@@ -1,0 +1,29 @@
+.icons-list {
+  display: flex;
+
+  &__item {
+    $size: rem(48px);
+
+    width: $size;
+    height: $size;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $very-dark-blue;
+    border-radius: rem(10px);
+
+    &:not(:last-child) {
+      margin-right: rem(16px);
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: block;
+  }
+}
